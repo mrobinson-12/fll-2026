@@ -1,4 +1,5 @@
 set -e
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 mkdir -p "$HOME/fll"
 brew install git
 brew install python@3.13
