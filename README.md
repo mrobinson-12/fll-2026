@@ -1,5 +1,5 @@
 # Pybricks & VS Code
-This is a template for a Pybricks and VS Code setup for FIRST LEGO League Challenge teams to use in the 2026-2027 season, "BioGlow". Our team has decided to use Pybricks this year for programming our Spike PRIME robots. I have to give lots of credit to [Skip Morrow](https://github.com/MrGibbage) for the guides on using Pybricks and VS Code. This is a fork of [His template repo](https://github.com/MrGibbage/pybricks-fll) which I have decided to add quite a bit to and make it easier to understand and use for new teams like us who are using Pybricks and python for the first time.
+This is a template for a Pybricks and VS Code setup for FIRST LEGO League Challenge teams to use in the 2026-2027 season, "BioGlow". Our team has decided to use Pybricks this year for programming our Spike PRIME robots. I have to give lots of credit to [Skip Morrow](https://github.com/MrGibbage) for the guides on using Pybricks and VS Code. This is a fork of [His template repo](https://github.com/MrGibbage/pybricks-fll) which I have decided to add quite a bit to and make it easier to understand and use for new teams like us who are using Pybricks and python for the first time as well.
 
 Some things I have added (or are planning to add) are:
 - A .gitignore file.
@@ -10,5 +10,7 @@ Some things I have added (or are planning to add) are:
 - In depth documentation on how to use the repo (Coming soon).
 - Integration with Hackatime in the install script (Coming soon).
 - PyBricks coding AI agent (Coming soon).
-- Hopefully clearer comments
-- Resources for teaching your students how to use Pybricks and GitHub (Coming soon-ish)
+- Hopefully clearer comments.
+- Resources for teaching your students how to use Pybricks and GitHub (Coming soon-ish).
+
+Feel free to contribute!
