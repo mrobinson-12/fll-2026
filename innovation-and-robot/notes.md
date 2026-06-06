@@ -6,6 +6,7 @@
 
 ### Why did we choose it?
 
+
 ## Our plan
 
 ### Goals
@@ -32,8 +33,11 @@
 # Robot Design
 
 ### What is our strategy?
+
 ### What resources have we used to support this?
+
 ### How are our attatchments, code and sensors innovative?
+
 ### What has our process been and what lessons have we learnt?
 
 
