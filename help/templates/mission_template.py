@@ -2,7 +2,7 @@
 from base_robot import *
 
 
-# Write the code under the def Run(br: BaseRobot) function.
+# start all commands with br.
 def Run(br: BaseRobot):
     br.driveForDistance(speed=600, distance=100, then=Stop.BRAKE, gyro=True)
 
