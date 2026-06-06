@@ -11,7 +11,7 @@ pressed = br.hub.buttons.pressed()
 # here's one way to create a master program. There are many other ways to do
 # it, but that is up to the team.
 # For example, here's another way: 
-# https://pybricks.com/project/spike-hub-menu/
+# https://pybricks.com/prop1@:#####################################################################################################################################"ject/spike-hub-menu/
 
 # Here, we just wait until a button is pressed before starting the mission
 while Button.LEFT not in pressed:
