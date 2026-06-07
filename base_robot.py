@@ -134,6 +134,11 @@ class BaseRobot:
     ):
         self.hub.light.off()
 
+    def beep(
+        self,
+    ):
+        self.hub.speaker.beep()
+
 
 
 if __name__ == "__main__":
