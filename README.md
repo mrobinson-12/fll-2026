@@ -12,5 +12,6 @@ Some things I have added (or are planning to add) are:
 - PyBricks coding AI agent (Coming soon).
 - Hopefully clearer comments.
 - Resources for teaching your students how to use Pybricks and GitHub (Coming soon-ish).
+- Good guides maybe hopefully
 
-Feel free to contribute!
+Feel free to contribute! It would be greatly appreciated!
