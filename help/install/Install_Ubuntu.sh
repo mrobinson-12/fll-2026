@@ -25,4 +25,10 @@ read -r -p "Enter your name: " username
 read -r -p "Enter your GitHub email: " useremail
 git config --global user.name "$username"
 git config --global user.email "$useremail"
+read -r -p "Would you like to install Hackatime? (If you don't know what it is do not install) (y/n) " install_hackatime
+if [[ $install_hackatime == "y" ]]; then
+    read -r -p "Enter your Hackatime API key (get it from your Hackatime settings): " hackatime_api_key
+    curl -fsSL https://raw.githubusercontent.com/hackclub/hackatime-setup/refs/heads/main/install.sh | bash -s -- "$hackatime_api_key"
+    echo "Hackatime installed."
+fi
 echo "Installation complete. Open up VS Code and open the fll-2026 folder to start coding!"

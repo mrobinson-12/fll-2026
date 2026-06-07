@@ -6,10 +6,10 @@ Some things I have added (or are planning to add) are:
 - Installation scripts for both MacOS (Finished) and Windows (In Progress) with Arch and Ubuntu supported!
 - A space for innovation project research and a template for notes that fit with the judging criteria.
 - More functions in the base_robot.py class.
-- Integration with the Pybricks Runner extension (Coming soon).
+- Pybricks runner extension reccomendation
 - In depth documentation on how to use the repo (Coming soon).
-- Integration with Hackatime in the install script (Coming soon).
-- PyBricks coding AI agent (Coming soon).
+- Integration with Hackatime in the install script (Linux & MacOS Only).
+- PyBricks coding AI agent (Not coming anytime soon).
 - Hopefully clearer comments.
 - Resources for teaching your students how to use Pybricks and GitHub (Coming soon-ish).
 - Good guides maybe hopefully
