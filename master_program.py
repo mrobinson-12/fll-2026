@@ -1,9 +1,18 @@
-# Menu to select missions
-from base_robot import *
-br = BaseRobot()
-from pybricks.tools import hub_menu
-# Import missions
+'''
+This is the master program which runs each individual mission or group of missions. You should start by
+importing your mission files below and then adding them to the menu list. You can add as many options
+as you would like and the menu does not need to be numerical, it can be letters or special characters
+as well.
+'''
 import mission_1_example, mission_2_example
+
+from base_robot import *
+
+br = BaseRobot()
+
+from pybricks.tools import hub_menu
+
+
 while True:
     mission = hub_menu("1", "2", "3")
 

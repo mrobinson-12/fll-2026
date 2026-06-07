@@ -1,4 +1,7 @@
-
+'''
+This code should not need to be run directly or edited by the students. It is a baserobot class which includes functions, settings, and setup for the robot.
+There are variables in here that should be changed to match the configuration of your robot and you can add some extra functions if you would like.
+'''
 from pybricks.parameters import Color
 from pybricks.pupdevices import Motor, ColorSensor
 from pybricks.tools import wait
@@ -19,7 +22,7 @@ from pybricks.tools import wait
 from pybricks import version
 
 
-# TODO: THESE ARE EXAMPLE VALUES!
+# THESE MUST BE CHANGED TO MATCH YOUR ROBOT'S CONFIGURATION
 TIRE_DIAMETER = 56  # mm
 AXLE_TRACK = 103  # distance between the wheels, mm
 COLOR_SENSOR_PORT = Port.F
@@ -30,7 +33,6 @@ LEFT_ATTACHMENT_MOTOR_PORT = Port.C
 RIGHT_ATTACHMENT_MOTOR_PORT = Port.D
 
 
-# Add params as you need them.
 class BaseRobot:
 
     def __init__(self):
@@ -53,8 +55,7 @@ class BaseRobot:
 
 
 
-# Millis*, Speed*
-# Confirmed working
+
     def moveLeftAttachmentMotorForMillis(
         self,
         millis,
@@ -69,14 +70,13 @@ class BaseRobot:
     ):
         self.rightAttachmentMotor.run_time(speed, millis)
 
-# Unconfirmed working
     def moveLeftAttachmentMotorForDeg(
         self,
         degrees,
         speed,
     ):
         self.leftAttachmentMotor.run_angle(speed, degrees, then=Stop.BRAKE, wait=True)
-# Unconfirmed working
+
     def moveRightAttachmentMotorForDeg(
         self,
         degrees,
@@ -84,9 +84,6 @@ class BaseRobot:
     ):
         self.rightAttachmentMotor.run_angle(speed, degrees, then=Stop.BRAKE, wait=True)
 
-
-# Params: Distance*, Speed*, Then, Gyro
-# Confirmed working
     def driveForDistance(
         self,
         distance,
@@ -98,8 +95,6 @@ class BaseRobot:
         self.robot.settings(straight_speed=speed)
         self.robot.straight(distance, then, wait)
 
-# Params: Angle*, Speed*, Then, Gyro
-# Confirmed working
     def turn(
         self,
         angle,
@@ -110,8 +105,7 @@ class BaseRobot:
         self.robot.use_gyro(gyro)
         self.robot.settings(straight_speed=speed)
         self.robot.turn(angle, then, wait)
- # Confirmed working
- # HSV values only
+
     def lightOn(
         self,
         h,
@@ -121,14 +115,12 @@ class BaseRobot:
     ):
         self.hub.light.on(Color(h, s, v))
 
-# Confirmed working
     def wait(
         self,
         time,
     ):
         wait(time)
 
-# Unconfirmed working, but should be fine
     def lightOff(
         self
     ):
