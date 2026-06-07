@@ -23,12 +23,12 @@ from pybricks import version
 
 
 # THESE MUST BE CHANGED TO MATCH YOUR ROBOT'S CONFIGURATION
-TIRE_DIAMETER = 56  # mm
-AXLE_TRACK = 103  # distance between the wheels, mm
+TIRE_DIAMETER = 87  # mm
+AXLE_TRACK = 161  # distance between the wheels, mm
 COLOR_SENSOR_PORT = Port.F
 COLOR_SENSOR_PORT_2 = Port.B
-LEFT_DRIVE_MOTOR_PORT = Port.E
-RIGHT_DRIVE_MOTOR_PORT = Port.A
+LEFT_DRIVE_MOTOR_PORT = Port.A
+RIGHT_DRIVE_MOTOR_PORT = Port.E
 LEFT_ATTACHMENT_MOTOR_PORT = Port.C
 RIGHT_ATTACHMENT_MOTOR_PORT = Port.D
 
@@ -51,8 +51,6 @@ class BaseRobot:
 
         self.colorSensor = ColorSensor(COLOR_SENSOR_PORT)
         self.colorSensor2 = ColorSensor(COLOR_SENSOR_PORT_2)
-        
-
 
 
 
@@ -92,7 +90,10 @@ class BaseRobot:
         gyro=True,
     ):
         self.robot.use_gyro(gyro)
-        self.robot.settings(straight_speed=speed)
+        self.robot.settings(
+            straight_speed=speed,
+            straight_acceleration=500
+        )
         self.robot.straight(distance, then, wait)
 
     def turn(
@@ -103,7 +104,7 @@ class BaseRobot:
         gyro=True,
     ):
         self.robot.use_gyro(gyro)
-        self.robot.settings(straight_speed=speed)
+        self.robot.settings(turn_rate=speed, turn_acceleration=500)
         self.robot.turn(angle, then, wait)
 
     def lightOn(
