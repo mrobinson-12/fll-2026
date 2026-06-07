@@ -9,7 +9,7 @@ Some things I have added (or are planning to add) are:
 - Pybricks runner extension reccomendation
 - In depth documentation on how to use the repo (Coming soon).
 - Integration with Hackatime in the install script (Linux & MacOS Only).
-- PyBricks coding AI agent (Not coming anytime soon).
+- PyBricks coding AI agent (In progress).
 - Hopefully clearer comments.
 - Resources for teaching your students how to use Pybricks and GitHub (Coming soon-ish).
 - Good guides maybe hopefully
