@@ -1,4 +1,7 @@
+
+from pybricks.parameters import Color
 from pybricks.pupdevices import Motor, ColorSensor
+from pybricks.tools import wait
 
 from pybricks.parameters import (
     Port,
@@ -26,8 +29,8 @@ RIGHT_DRIVE_MOTOR_PORT = Port.A
 LEFT_ATTACHMENT_MOTOR_PORT = Port.C
 RIGHT_ATTACHMENT_MOTOR_PORT = Port.D
 
-# Check the pybricks API documentation to see how these parameters are set
-# and used. Add other parameters that your robot needs.
+
+# Add params as you need them.
 class BaseRobot:
 
     def __init__(self):
@@ -46,6 +49,7 @@ class BaseRobot:
 
         self.colorSensor = ColorSensor(COLOR_SENSOR_PORT)
         self.colorSensor2 = ColorSensor(COLOR_SENSOR_PORT_2)
+        
 
 
 
@@ -57,6 +61,28 @@ class BaseRobot:
         speed,
     ):
         self.leftAttachmentMotor.run_time(speed, millis)
+
+    def moveRightAttachmentMotorForMillis(
+        self,
+        millis,
+        speed,
+    ):
+        self.rightAttachmentMotor.run_time(speed, millis)
+
+# Unconfirmed working
+    def moveLeftAttachmentMotorForDeg(
+        self,
+        degrees,
+        speed,
+    ):
+        self.leftAttachmentMotor.run_angle(speed, degrees, then=Stop.BRAKE, wait=True)
+# Unconfirmed working
+    def moveRightAttachmentMotorForDeg(
+        self,
+        degrees,
+        speed,
+    ):
+        self.rightAttachmentMotor.run_angle(speed, degrees, then=Stop.BRAKE, wait=True)
 
 
 # Params: Distance*, Speed*, Then, Gyro
@@ -84,7 +110,29 @@ class BaseRobot:
         self.robot.use_gyro(gyro)
         self.robot.settings(straight_speed=speed)
         self.robot.turn(angle, then, wait)
+ # Confirmed working
+ # HSV values only
+    def lightOn(
+        self,
+        h,
+        s,
+        v,
+        color=None,
+    ):
+        self.hub.light.on(Color(h, s, v))
 
+# Confirmed working
+    def wait(
+        self,
+        time,
+    ):
+        wait(time)
+
+# Unconfirmed working, but should be fine
+    def lightOff(
+        self
+    ):
+        self.hub.light.off()
 
 
 

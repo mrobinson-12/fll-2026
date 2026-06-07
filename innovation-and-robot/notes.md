@@ -9,13 +9,13 @@
 
 ## Our plan
 
-### Goals
+### Goals *
 
 ### Scope
 
-### Timeline
+### Timeline * 
 
-### Roles
+### Roles *
 
 
 ## Our Solution
@@ -34,10 +34,10 @@
 
 ### What is our strategy?
 
-### What resources have we used to support this?
+### What resources have we used to support this? *
 
 ### How are our attatchments, code and sensors innovative?
 
-### What has our process been and what lessons have we learnt?
+### What has our process been and what lessons have we learnt? *
 
 
