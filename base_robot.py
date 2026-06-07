@@ -131,6 +131,13 @@ class BaseRobot:
     ):
         self.hub.speaker.beep()
 
+    def resetHeading(
+        self,
+        angle=0,
+    ):
+        self.robot.reset_heading(angle)
+
+
 
 
 if __name__ == "__main__":
