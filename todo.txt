@@ -1,3 +1,5 @@
+All stuff to be done before repo is made public, to be added to. 
+
 control.limits(speed, acceleration, torque)
 (max speed, acc, max torque)
 
