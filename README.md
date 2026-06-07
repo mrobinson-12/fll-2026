@@ -3,7 +3,7 @@ This is a template for a Pybricks and VS Code setup for FIRST LEGO League Challe
 
 Some things I have added (or are planning to add) are:
 - A .gitignore file.
-- Installation scripts for MacOS (Finished), and Windows (In Progress), with Arch and Ubuntu supported (untested atm)!
+- Installation scripts for MacOS (Finished), and Windows (In Progress), with Arch and Ubuntu supported (untested atm)
 - A space for innovation project research and a template for notes that fit with the judging criteria.
 - More functions in the base_robot.py class to be used.
 - Pybricks runner extension reccomendation
@@ -13,4 +13,5 @@ Some things I have added (or are planning to add) are:
 - Hopefully clearer comments which are easier to understand.
 - Resources and lessons for teaching students Pybricks and Python.
 - Add calibration scripts (In progress).
+
 Feel free to contribute! It would be greatly appreciated!
