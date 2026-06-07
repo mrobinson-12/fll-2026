@@ -10,7 +10,8 @@
 		"ms-python.vscode-pylance",
 		"ms-python.python",
 		"ms-python.debugpy",
-		"SkipMorrow.vs-code-keybindings-for-pybricks"
+		"SkipMorrow.vs-code-keybindings-for-pybricks",
+		"anandsingh.pybricks-runner"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
