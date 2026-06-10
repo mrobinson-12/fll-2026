@@ -6,6 +6,7 @@ Make docs on using the thing
 AI
 - Finish AI
 - Tool call to fetch docs from internet
+- learn openrouter tool calling
 
 Tools for using in innovation project
 - E.g. how Pybricks was used, GitHub to sync up and everyone contributed

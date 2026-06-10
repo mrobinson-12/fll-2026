@@ -12,6 +12,7 @@ br = BaseRobot()
 
 from pybricks.tools import hub_menu
 
+# Feel free to add more options to the menu and import more missions as needed.
 
 while True:
     mission = hub_menu("1", "2", "3")
@@ -24,5 +25,5 @@ while True:
         mission_2_example.Run(br)
     elif mission == "3":
         br.beep()
-        pass
+        pass        
 

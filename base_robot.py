@@ -1,5 +1,5 @@
 '''
-This code should not need to be run directly or edited by the students. It is a baserobot class which includes functions, settings, and setup for the robot.
+This code should not need to be run directly or edited by the students unless they want to add some functions. It is a baserobot class which includes functions, settings, and setup for the robot.
 There are variables in here that should be changed to match the configuration of your robot and you can add some extra functions if you would like.
 '''
 from pybricks.parameters import Color
@@ -51,6 +51,7 @@ class BaseRobot:
 
         self.colorSensor = ColorSensor(COLOR_SENSOR_PORT)
         self.colorSensor2 = ColorSensor(COLOR_SENSOR_PORT_2)
+
 
 
 
