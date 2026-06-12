@@ -15,8 +15,6 @@ def Run(br: BaseRobot):
 
 
 
-wait(1000)
-
 
 
 
