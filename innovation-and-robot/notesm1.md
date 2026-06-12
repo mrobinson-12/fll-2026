@@ -12,6 +12,9 @@ Improvement on innovation project
 
 Robot design
 - Passive attatchments
+- Experiment with different designs
+- 4 wheeled robot
+
 
 Game
 - Accuracy

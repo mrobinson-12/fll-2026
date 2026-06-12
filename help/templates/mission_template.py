@@ -1,4 +1,4 @@
-# Ignore this, this just imports the BaseRobot class, which has the funtions for the robot
+# Ignore this, this just imports the BaseRobot class, which has the functions for the robot
 from base_robot import *
 
 
