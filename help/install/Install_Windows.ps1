@@ -1,12 +1,12 @@
 $ErrorActionPreference = 'Stop'
-#Ensure stopping if errorsoccur. This is important for installation scripts to prevent partial installations.
+#Ensure stopping if errors occur. This is important for installation scripts to prevent partial installations.
 mkdir "$HOME\fll"
 #makes fll directory
 Write-Host "Intstalling Git and Python via winget..."
 #Inform user of installing git and python
-winget install --id Git.Git -e --silent #Silet to piss off michael
+winget install --id Git.Git -e 
 #Git install
-winget install --id Python.Python3 -e --silent #silent to still piss off michael
+winget install --id Python.Python3 -e
 #Python install
 Write-Host "Git and Python installed succesfully" -ForegroundColor Green
 #inform user of successful install
