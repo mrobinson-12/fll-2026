@@ -25,5 +25,5 @@ while True:
         mission_2_example.Run(br)
     elif mission == "3":
         br.beep()
-        pass        
+        pass
 

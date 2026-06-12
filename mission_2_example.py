@@ -28,9 +28,6 @@ def Run(br: BaseRobot):
 
 
 
-
-
-
 # Ignore everything below this line. This just runs the mission.
 if __name__ == "__main__":
     br = BaseRobot()
