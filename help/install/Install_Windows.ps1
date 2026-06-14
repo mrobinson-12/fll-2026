@@ -28,7 +28,30 @@ Write-Host "Setting up python venv and installing required dependencies..."
 #inform user of next steps - python venv and dependencies
 python -m venv.venv
 #setup python virtual envirmnt
-
+.venv\Scripts\Activate.ps1
+#activate python virtual envirmnt
+python -m pip install --upgrade pip
+#upgrade pip
+python -m pip install pybricks
+#install pybricks
+python -m pip install pybricksdev
+#install pybricksdev
+$User_name = Read-Host "Enter your name: "
+#get username
+$Useremail = Read-Host "Enter your GitHub email: "
+#get user email
+git config --global user.name "$Username"
+git config --global user.email "$Useremail"
+$install_hackatime = Read-Host "Would you like to install Hackatime? (If you don't know what it is do not install) (y/n)"
+#ask user if they want to install hackatime
+if ($install_hackatime -eq "y") {
+$hackatime_api_key = Read-Host "Enter your Hackatime API key (get it from your Hackatime settings): "
+#Get hackatime api key
+irm https://raw.githubusercontent.com/hackclub/hackatime-setup/main/install.ps1 | iex; & hackatime-setup --yes -- "$hackatime_api_key"
+#stuff i dont understand but it installs hackatime
+Write-Host "Hackatime installed succesfully" -ForegroundColor Green
+}
+Write-Host "Installation complete. Open up VS Code and open the fll-2026 folder to start coding!" -ForegroundColor Green
 
 #!/bin/bash
 #set -e✅
@@ -52,18 +75,18 @@ python -m venv.venv
 #cd fll-2026✅
 #echo "Setting up Python virtual environment and installing dependencies..."✅
 #python3 -m venv .venv✅
-#source .venv/bin/activate
-#pip install --upgrade pip
-#pip install pybricks
-#pip install pybricksdev
-#read -r -p "Enter your name: " username
-#read -r -p "Enter your GitHub email: " useremail
-#git config --global user.name "$username"
-#git config --global user.email "$useremail"
-#read -r -p "Would you like to install Hackatime? (If you don't know what it is do not install) (y/n) " install_hackatime
-#if [[ $install_hackatime == "y" ]]; then
-    #read -r -p "Enter your Hackatime API key (get it from your Hackatime settings): " hackatime_api_key
-    #curl -fsSL https://raw.githubusercontent.com/hackclub/hackatime-setup/refs/heads/main/install.sh | bash -s -- "$hackatime_api_key"
-    #echo "Hackatime installed."
+#source .venv/bin/activate✅
+#pip install --upgrade pip✅
+#pip install pybricks✅
+#pip install pybricksdev✅
+#read -r -p "Enter your name: " username✅ ?
+#read -r -p "Enter your GitHub email: " useremail✅
+#git config --global user.name "$username"✅
+#git config --global user.email "$useremail"✅
+#read -r -p "Would you like to install Hackatime? (If you don't know what it is do not install) (y/n) " install_hackatime✅
+#if [[ $install_hackatime == "y" ]]; then✅
+    #read -r -p "Enter your Hackatime API key (get it from your Hackatime settings): " hackatime_api_key✅
+    #curl -fsSL https://raw.githubusercontent.com/hackclub/hackatime-setup/refs/heads/main/install.sh | bash -s -- "$hackatime_api_key"✅
+    #echo "Hackatime installed."✅
 #fi
-#echo "Installation complete. Open up VS Code and open the fll-2026 folder to start coding!"
+#echo "Installation complete. Open up VS Code and open the fll-2026 folder to start coding!"✅
