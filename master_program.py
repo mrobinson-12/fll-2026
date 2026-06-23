@@ -16,7 +16,7 @@ from pybricks.tools import hub_menu
 
 while True:
     mission = hub_menu("1", "2", "3")
-
+    
     if mission == "1":
         br.beep()
         mission_1_example.Run(br)
